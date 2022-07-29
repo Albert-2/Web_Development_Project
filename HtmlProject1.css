@@ -1,0 +1,168 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    font-family: 'Ibarra Real Nova', serif;
+}
+
+h2 {
+    display: inline-block;
+    color: rgb(152, 217, 235);
+    font-size: 30px;
+    height: 40px;
+    margin-top: 15px;
+    margin-left: 15px;
+    margin-bottom: 0px;
+}
+
+h2:hover {
+    color: rgb(114, 209, 114);
+    cursor: pointer;
+}
+
+.mainmenu {
+    width: 709px;
+    margin: 10px 1070px;
+    color: lightgray;
+    display: inline-block;
+    position: absolute;
+}
+
+.mainmenuitems {
+    float: left;
+    position: relative;
+    padding: 10px 15px;
+}
+
+.mainmenuitems:hover {
+    color: darkgray;
+}
+
+.clear {
+    clear: both;
+}
+
+.submenu1,
+.submenu2,
+.submenu3 {
+    position: absolute;
+    top: 100%;
+    left: 0px;
+    display: none;
+    width: 250px;
+    background-color: rgb(92, 92, 92);
+}
+
+.mainmenuitems:hover {
+    cursor: pointer;
+}
+
+.mainmenuitems:hover .submenu1,
+.mainmenuitems:hover .submenu2,
+.mainmenuitems:hover .submenu3 {
+    display: block;
+}
+
+.submenu1items,
+.submenu2items,
+.submenu3items {
+    padding: 7px;
+    border-bottom: solid black 2px;
+    color: white;
+    font-size: 12px;
+    text-align: left;
+    font-size: 14px;
+    text-align: center;
+}
+
+#first1,
+#first2,
+#first3 {
+    border-top: 2px solid orange;
+}
+
+.submenu1items:hover,
+.submenu2items:hover,
+.submenu3items:hover {
+    padding-left: 2.5rem;
+    transition: all .3s;
+    transition-property: all;
+    transition-duration: 0.3s;
+    transition-timing-function: ease;
+    transition-delay: 0s
+}
+
+article {
+    position: fixed;
+    top: 5px;
+    display: block;
+}
+
+img {
+    height: 909px;
+    width: 1910px;
+}
+
+.container {
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    display: inline-flex;
+    top: 70%;
+    left: 3%;
+}
+
+.container .fixed {
+    font-weight: 400;
+    color: rgb(255, 255, 255);
+    font-size: 55px;
+}
+
+.container .staticdata {
+    margin-left: 15px;
+    line-height: 90px;
+    height: 90px;
+    overflow: hidden;
+}
+
+.staticdata li {
+    list-style: none;
+    font-size: 60px;
+    font-weight: 500;
+    position: relative;
+    top: 0px;
+    color: rgb(139, 222, 125);
+    animation: slide 8s steps(4) infinite;
+}
+
+@keyframes slide {
+    100% {
+        top: -360px;
+    }
+}
+
+.staticdata li span {
+    position: relative;
+}
+
+.staticdata li span::after {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    border-left: 2px solid rgb(139, 222, 125);
+    left: 0;
+    background-color: rgba(1, 159, 225, 255);
+    animation: typing 2s steps(10) infinite;
+}
+
+@keyframes typing {
+    100% {
+        left: 100%;
+        margin: 0 -35px 0 35px;
+    }
+}
